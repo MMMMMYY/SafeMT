@@ -1,5 +1,4 @@
-# SafeMT — Metamorphic Testing Dataset for T2I Safety
-
+# SafeMT
 ---
 
 ## Repository Structure
