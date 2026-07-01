@@ -1,8 +1,5 @@
 # SafeMT — Metamorphic Testing Dataset for T2I Safety
 
-Artifact repository for the ICSE 2027 paper:
-**"SafeMT: Anchor-Locked Metamorphic Testing for Text-to-Image Safety"**
-
 ---
 
 ## Repository Structure
@@ -92,7 +89,7 @@ Each line is a JSON object with:
 
 ## Reproducing the Pipeline
 
-### One-command run (steps 1–4)
+### Easy run (steps 1–4)
 
 `run_safemt.sh` chains follow-up generation → image generation → consistency checking → final report.
 
@@ -171,15 +168,3 @@ python3 scripts/safemt_report.py --model all
 - [NudeNet](https://github.com/notAI-tech/NudeNet)
 - [llmorph](https://github.com/UNSW-ML-Research/llmorph) (NLP MR execution framework)
 - torchvision (SSDLite320-MobileNetV3 for MetaLogic)
-
----
-
-## Citation
-
-```bibtex
-@inproceedings{safemt2027,
-  title     = {SafeMT: Anchor-Locked Metamorphic Testing for Text-to-Image Safety},
-  booktitle = {ICSE},
-  year      = {2027}
-}
-```
