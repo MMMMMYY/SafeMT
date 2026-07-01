@@ -1,0 +1,19 @@
+#!/bin/bash
+#PBS -N sdxl_safemt
+#PBS -l select=1:ncpus=4:mem=32gb:ngpus=1
+#PBS -l walltime=12:00:00
+#PBS -j oe
+
+export PIP_CACHE_DIR=/srv/scratch/${USER}/.cache/pip
+export HF_HOME=/srv/scratch/${USER}/.cache/huggingface
+
+cd /srv/scratch/${USER}/safemt
+
+module load cuda/12.1.1
+module load python/3.10.8
+source /srv/scratch/${USER}/sdxl_env/bin/activate
+
+python3 hpc_generate_sdxl.py \
+    --jobs hpc_sdxl_jobs.json \
+    --output-dir ./output \
+    --start 0 --end 1350

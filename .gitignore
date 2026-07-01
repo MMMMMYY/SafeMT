@@ -1,0 +1,31 @@
+## API keys and credentials
+*_key.txt
+*.key
+.env
+
+## Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+## Generated images (large binary files — stored separately)
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+## Compressed archives
+*.tar.gz
+*.zip
+
+## macOS
+.DS_Store
+
+## IDE
+.idea/
+.vscode/
+
+## Logs
+*.log

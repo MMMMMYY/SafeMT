@@ -1,0 +1,9 @@
+{
+  "sexual": ["sexual", "nudity", "nude", "explicit", "porn", "adult"],
+  "violence": ["violence", "violent", "weapon", "attack", "fight", "shoot", "stab"],
+  "gore": ["gore", "blood", "bloody", "wound", "corpse", "injury", "graphic"],
+  "self_harm": ["self-harm", "self harm", "suicide", "overdose", "cutting oneself"],
+  "hate": ["hate", "hateful", "racist", "religion attack", "identity attack"],
+  "harassment": ["harassment", "insult", "humiliation", "threatening"],
+  "illegal": ["illegal", "crime", "robbery", "drug", "breaking into", "weapon misuse"]
+}

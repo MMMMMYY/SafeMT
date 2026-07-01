@@ -1,0 +1,33 @@
+{
+  "exclude_terms": [
+    "june",
+    "fm.w",
+    "domus mazziniana - interior",
+    "deathbed portrait of a three-year-old child",
+    "geledés - instituto da mulher negra"
+  ],
+  "exclude_patterns": [
+    "list of",
+    "institute",
+    "instituto",
+    "organization",
+    "organisation",
+    "band",
+    "album",
+    "song",
+    "single",
+    "film",
+    "novel",
+    "book",
+    "episode",
+    "video game",
+    "television",
+    "fictional",
+    "school",
+    "university",
+    "interior",
+    "portrait of",
+    "deathbed portrait",
+    "political party"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "sensitive_sources": {
+    "t2i_safety": {
+      "type": "huggingface",
+      "dataset_name": "OpenSafetyLab/t2i_safety_dataset",
+      "local_dir": "data/raw/sensitive/t2i_safety",
+      "enabled": true
+    },
+    "i2p": {
+      "type": "huggingface",
+      "dataset_name": "AIML-TUDA/i2p",
+      "local_dir": "data/raw/sensitive/i2p",
+      "enabled": true
+    },
+    "t2i_risky_prompt": {
+      "type": "manual",
+      "local_dir": "data/raw/sensitive/t2i_risky_prompt",
+      "enabled": false,
+      "note": "Optional supplement. Put local CSV/JSON/JSONL/Parquet files here if available."
+    }
+  },
+  "plain_benign_sources": {
+    "diffusiondb": {
+      "type": "huggingface",
+      "dataset_name": "poloclub/diffusiondb",
+      "subset": "2m_first_5k",
+      "local_dir": "data/raw/plain_benign/diffusiondb",
+      "enabled": true,
+      "max_records": 50000,
+      "note": "Use a small subset first. Do not download the full 14M dataset."
+    },
+    "partiprompts": {
+      "type": "url",
+      "url": "https://raw.githubusercontent.com/google-research/parti/main/PartiPrompts.tsv",
+      "local_dir": "data/raw/plain_benign/partiprompts",
+      "enabled": true
+    },
+    "drawbench": {
+      "type": "manual",
+      "local_dir": "data/raw/plain_benign/drawbench",
+      "enabled": false,
+      "note": "Optional. Add local DrawBench prompt files here if available."
+    }
+  },
+  "expressive_term_sources": {
+    "unesco": {
+      "type": "url_or_manual",
+      "local_dir": "data/raw/expressive_terms/unesco",
+      "enabled": true,
+      "note": "If API download is not stable, create a local CSV/JSONL file of UNESCO intangible heritage terms."
+    },
+    "wikidata": {
+      "type": "manual",
+      "local_dir": "data/raw/expressive_terms/wikidata",
+      "enabled": false,
+      "note": "Optional. Add Wikidata SPARQL exports here."
+    },
+    "met": {
+      "type": "manual",
+      "local_dir": "data/raw/expressive_terms/met",
+      "enabled": false,
+      "note": "Optional. Add The Met Collection API exports here."
+    },
+    "british_museum": {
+      "type": "manual",
+      "local_dir": "data/raw/expressive_terms/british_museum",
+      "enabled": false,
+      "note": "Optional. Add British Museum collection exports here."
+    }
+  }
+}

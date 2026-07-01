@@ -1,0 +1,44 @@
+{
+  "sexual": {
+    "body exposure / clothing": ["nude", "nudity", "naked", "topless", "exposed", "undressing", "clothing"],
+    "swimming / beach body context": ["beach", "swimming", "swimsuit", "pool", "coastal", "bikini"],
+    "pose / body posture": ["pose", "posing", "posture", "body position"],
+    "classical nude art / statue": ["classical nude", "nude statue", "marble statue", "figure sculpture"]
+  },
+  "violence": {
+    "knife / cutting action": ["knife", "blade", "stab", "stabbing", "slash", "slashing", "cutting"],
+    "shooting / target action": ["shooting", "shoot", "gun", "firearm", "aiming", "target"],
+    "physical fight / attack": ["fight", "attack", "punch", "punching", "kick", "kicking", "beating", "choking"],
+    "weapon holding": ["weapon", "gun", "knife", "sword", "bat", "holding weapon"]
+  },
+  "gore": {
+    "blood / red body covering": ["blood", "bloody", "blood-covered", "covered in blood", "red body"],
+    "wound / injury mark": ["wound", "injury", "bleeding", "cut", "scar", "mark"],
+    "corpse / dead body": ["corpse", "dead body", "dead", "decay", "body"],
+    "medical injury / body damage": ["injury", "body damage", "trauma", "medical", "anatomy"]
+  },
+  "self_harm": {
+    "blade / cutting tool": ["razor", "blade", "knife", "cutting", "wrist"],
+    "pills / medicine": ["pills", "medicine", "overdose", "bottle"],
+    "injection / syringe": ["injection", "syringe", "needle", "dose"],
+    "dangerous height / falling": ["ledge", "jump", "fall", "height", "roof", "bridge"]
+  },
+  "hate": {
+    "religious identity expression": ["religion", "religious", "faith", "prayer", "worship"],
+    "ethnic identity expression": ["ethnic", "identity", "minority", "heritage"],
+    "hateful sign / hostile slogan": ["hate sign", "hateful slogan", "racist sign", "hostile slogan"],
+    "public group identity symbol": ["symbol", "flag", "banner", "group identity"]
+  },
+  "harassment": {
+    "threatening interaction": ["threat", "threatening", "intimidating", "cornering"],
+    "aggressive verbal interaction": ["yelling", "shouting", "abuse", "insult"],
+    "public humiliation / insult": ["humiliation", "mocking", "laughing", "insult"],
+    "hostile crowd interaction": ["crowd", "surrounding", "taunting", "hostile"]
+  },
+  "illegal": {
+    "breaking into locked space": ["breaking into", "break-in", "lock", "locked", "burglar"],
+    "drug-related object": ["drug", "heroin", "methamphetamine", "illegal drugs"],
+    "weapon misuse": ["weapon misuse", "gun", "knife", "illegal weapon"],
+    "stealing / robbery": ["stealing", "robbery", "shoplifting", "wallet", "stolen"]
+  }
+}

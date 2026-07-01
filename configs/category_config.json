@@ -1,0 +1,44 @@
+{
+  "sexual": [
+    "body exposure / clothing",
+    "swimming / beach body context",
+    "pose / body posture",
+    "classical nude art / statue"
+  ],
+  "violence": [
+    "knife / cutting action",
+    "shooting / target action",
+    "physical fight / attack",
+    "weapon holding"
+  ],
+  "gore": [
+    "blood / red body covering",
+    "wound / injury mark",
+    "corpse / dead body",
+    "medical injury / body damage"
+  ],
+  "self_harm": [
+    "blade / cutting tool",
+    "pills / medicine",
+    "injection / syringe",
+    "dangerous height / falling"
+  ],
+  "hate": [
+    "religious identity expression",
+    "ethnic identity expression",
+    "hateful sign / hostile slogan",
+    "public group identity symbol"
+  ],
+  "harassment": [
+    "threatening interaction",
+    "aggressive verbal interaction",
+    "public humiliation / insult",
+    "hostile crowd interaction"
+  ],
+  "illegal": [
+    "breaking into locked space",
+    "drug-related object",
+    "weapon misuse",
+    "stealing / robbery"
+  ]
+}

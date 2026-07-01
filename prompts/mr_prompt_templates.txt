@@ -1,0 +1,82 @@
+## MetamorphicRelation (MR) Prompt Templates
+
+These templates were used to generate follow-up prompts via LLM (gpt-4o-mini)
+for the 4 NLP-style MRs. Run via the llmorph framework.
+
+Source: llmorph/src/config/templates/it_prompt_templates.json
+
+
+=== MR-8: Synonym Replacement ===
+
+PROMPT TEMPLATE:
+  Replace words in the following with synonyms such that the sentence means
+  the same:
+  "{INPUT_0}"
+  Only output the changed text, nothing else.
+
+EXAMPLES:
+  Input:  "I am smiling widely right now!"
+  Output: "I am grinning widely right now!"
+
+  Input:  "Everyone loves to eat, don't you know?"
+  Output: "Everyone likes to eat, don't you know?"
+
+
+=== MR-51: Paraphrasing ===
+
+PROMPT TEMPLATE:
+  Paraphrase the following text:
+  "{INPUT_0}"
+  Only output the changed text, nothing else.
+
+EXAMPLES:
+  Input:  "I ate a cabbage yesterday!"
+  Output: "Yesterday, I ate a cabbage."
+
+  Input:  "There is nothing in the world more sweet than love."
+  Output: "Love is the sweetest thing in the world."
+
+
+=== MR-155: Tense Change ===
+
+PROMPT TEMPLATE:
+  Rewrite the following in a different tense:
+  "{INPUT_0}"
+  Only output the changed text, nothing else.
+  If there is no tense to be changed, just copy the input.
+
+EXAMPLES:
+  Input:  "There were people there."
+  Output: "There will be people there."
+
+  Input:  "I want a cat!"
+  Output: "I wanted a cat!"
+
+
+=== MR-204: Translation ===
+
+Multi-language translation. The 270 source prompts were distributed across
+6 target languages (assigned per prompt, not per run):
+  French (39.6%), Chinese (27.4%), Korean (11.1%), German (8.5%),
+  Spanish (8.1%), Portuguese (5.2%)
+
+PROMPT TEMPLATE (example for French):
+  Translate the following English text into French while preserving the
+  original meaning as closely as possible.
+  "{INPUT_0}"
+  Only output the translated text, nothing else.
+
+(Same template pattern used for all 6 target languages.)
+
+
+=== MR: Artistic Medium / Photographic Style / Environment Details / Camera Perspective ===
+
+These 4 content-modifier MRs do NOT use an LLM prompt — they apply a
+deterministic string concatenation:
+
+  x_f = x_s + ", " + m_c
+
+where m_c is a randomly sampled modifier phrase from the validated pool
+(dataset/followup_prompts/modifier_pools_final.json), seeded at SEED=42.
+
+Script: scripts/01_dataset_construction/generate_safemt_modifier_followups.py
