@@ -4,7 +4,7 @@
   "n_prompts_covered": 270,
   "n_prompts_total": 270,
   "n_pairs_observed": 2160,
-  "n_pairs_baseline": 806,
+  "n_pairs_baseline": 810,
   "strata": {
    "overall": {
     "observed": {
