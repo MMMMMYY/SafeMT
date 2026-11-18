@@ -4,14 +4,14 @@
 #PBS -l walltime=12:00:00
 #PBS -j oe
 
-export PIP_CACHE_DIR=/srv/scratch/${USER}/.cache/pip
-export HF_HOME=/srv/scratch/${USER}/.cache/huggingface
+export PIP_CACHE_DIR=${TMPDIR:-/tmp}/safemt-pip-cache
+export HF_HOME=${TMPDIR:-/tmp}/safemt-hf-cache
 
-cd /srv/scratch/${USER}/safemt
+cd "${SAFEMT_WORK_DIR:-${PBS_O_WORKDIR:-$PWD}}"
 
 module load cuda/12.1.1
 module load python/3.10.8
-source /srv/scratch/${USER}/sdxl_env/bin/activate
+if [ -n "${SAFEMT_VENV:-}" ]; then source "${SAFEMT_VENV}/bin/activate"; fi
 
 python3 hpc_generate_sdxl.py \
     --jobs hpc_modifier_jobs.json \

@@ -1,0 +1,48 @@
+{
+  "flagged_audit": {
+    "n": 300,
+    "independent_agree": 292,
+    "kappa": 0.9192408641227539,
+    "metadata_and_labels": "preserved"
+  },
+  "classifier_audit": {
+    "n": 200,
+    "correct": 168,
+    "accuracy": 0.84,
+    "kappa": 0.9588265568708183
+  },
+  "MR_validation": {
+    "n": 240,
+    "final_counts": {
+      "scene": 229,
+      "policy": 232,
+      "joint": 224
+    },
+    "reconciliation_fields": 3,
+    "unanimous_fields_retained": 477,
+    "lineage": "all agreements retained; all disagreements have decisions"
+  },
+  "canonical_prompts": {
+    "sources": 270,
+    "followups": 2160,
+    "matches_automated_validation": true
+  },
+  "images": {
+    "audit_previews": 609,
+    "figure3_originals": 8,
+    "hashes_match": true
+  },
+  "repetition_protocol": {
+    "source_prompts_per_model": 270,
+    "repetitions_per_prompt": 3,
+    "manifest_slots": "all planned slots represented; pair evidence matches recorded non-error outcomes"
+  },
+  "links_and_scripts": {
+    "markdown_links": "all local targets exist",
+    "python_syntax": "passed"
+  },
+  "paper_reference": {
+    "title": "Detecting Safety Behavior Inconsistencies in Text-to-Image Generation via Metamorphic Testing",
+    "pages": 13
+  }
+}

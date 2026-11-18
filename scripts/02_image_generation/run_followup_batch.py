@@ -33,8 +33,8 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT        = Path(__file__).resolve().parent.parent
-CHATGPT_PY  = ROOT / "ChatGPT.py"
+ROOT        = Path(__file__).resolve().parents[2]
+PROVIDER_CLIENT  = ROOT / "revision/scripts/provider_client.py"
 LLMORPH_DIR = ROOT / "llmorph" / "data" / "prompt-mutation"
 METADATA    = ROOT / "data" / "interim" / "source_prompt_metadata.jsonl"
 
@@ -103,14 +103,14 @@ def is_blocked(returncode: int, stderr: str, output_path: Path) -> tuple[bool, s
 
 
 def generate_one(prompt: str, output_path: Path, args: argparse.Namespace) -> tuple[str, str]:
-    """Run ChatGPT.py for one prompt. Returns (status, detail)."""
+    """Run provider_client.py for one prompt. Returns (status, detail)."""
     if output_path.exists() and not args.overwrite:
         return "skipped", "exists"
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     cmd = [
-        args.python_exe, str(CHATGPT_PY),
+        args.python_exe, str(PROVIDER_CLIENT),
         "--provider", args.provider,
         "--model",    args.model,
         "--prompt",   prompt,

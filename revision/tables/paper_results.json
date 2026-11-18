@@ -1,0 +1,911 @@
+{
+  "table_iii": {
+    "agreement": {
+      "semantics_preserved": {
+        "n": 240,
+        "agree": 238,
+        "disagree": 2,
+        "agreement": 0.9916666666666667,
+        "kappa": 0.8956521739130435
+      },
+      "safety_intent_preserved": {
+        "n": 240,
+        "agree": 239,
+        "disagree": 1,
+        "agreement": 0.9958333333333333,
+        "kappa": 0.9390243902439024
+      }
+    },
+    "rows": [
+      {
+        "mr_id": "51",
+        "mr": "Paraphrasing",
+        "n": 30,
+        "sim": 0.9607266774883977,
+        "spr": 0.9703703703703703,
+        "scene": 29,
+        "policy": 30,
+        "joint": 29,
+        "contexts": {
+          "sensitive": {
+            "joint": 9,
+            "n": 10
+          },
+          "expressive": {
+            "joint": 10,
+            "n": 10
+          },
+          "neutral": {
+            "joint": 10,
+            "n": 10
+          }
+        }
+      },
+      {
+        "mr_id": "8",
+        "mr": "Synonym replacement",
+        "n": 30,
+        "sim": 0.9663998299174839,
+        "spr": 0.737037037037037,
+        "scene": 24,
+        "policy": 26,
+        "joint": 22,
+        "contexts": {
+          "sensitive": {
+            "joint": 10,
+            "n": 10
+          },
+          "expressive": {
+            "joint": 6,
+            "n": 10
+          },
+          "neutral": {
+            "joint": 6,
+            "n": 10
+          }
+        }
+      },
+      {
+        "mr_id": "204",
+        "mr": "Translation",
+        "n": 30,
+        "sim": 0.8884705868032243,
+        "spr": 0.9740740740740741,
+        "scene": 26,
+        "policy": 28,
+        "joint": 25,
+        "contexts": {
+          "sensitive": {
+            "joint": 8,
+            "n": 10
+          },
+          "expressive": {
+            "joint": 9,
+            "n": 10
+          },
+          "neutral": {
+            "joint": 8,
+            "n": 10
+          }
+        }
+      },
+      {
+        "mr_id": "155",
+        "mr": "Tense change",
+        "n": 30,
+        "sim": 0.9861625168058608,
+        "spr": 1.0,
+        "scene": 30,
+        "policy": 28,
+        "joint": 28,
+        "contexts": {
+          "sensitive": {
+            "joint": 9,
+            "n": 10
+          },
+          "expressive": {
+            "joint": 10,
+            "n": 10
+          },
+          "neutral": {
+            "joint": 9,
+            "n": 10
+          }
+        }
+      },
+      {
+        "mr_id": "artistic_medium",
+        "mr": "Artistic medium",
+        "n": 30,
+        "sim": 0.976506491722884,
+        "spr": 1.0,
+        "scene": 30,
+        "policy": 30,
+        "joint": 30,
+        "contexts": {
+          "sensitive": {
+            "joint": 10,
+            "n": 10
+          },
+          "expressive": {
+            "joint": 10,
+            "n": 10
+          },
+          "neutral": {
+            "joint": 10,
+            "n": 10
+          }
+        }
+      },
+      {
+        "mr_id": "photographic_style",
+        "mr": "Photographic style",
+        "n": 30,
+        "sim": 0.976931835103918,
+        "spr": 1.0,
+        "scene": 30,
+        "policy": 30,
+        "joint": 30,
+        "contexts": {
+          "sensitive": {
+            "joint": 10,
+            "n": 10
+          },
+          "expressive": {
+            "joint": 10,
+            "n": 10
+          },
+          "neutral": {
+            "joint": 10,
+            "n": 10
+          }
+        }
+      },
+      {
+        "mr_id": "environment_details",
+        "mr": "Environment details",
+        "n": 30,
+        "sim": 0.9763438573590031,
+        "spr": 1.0,
+        "scene": 30,
+        "policy": 30,
+        "joint": 30,
+        "contexts": {
+          "sensitive": {
+            "joint": 10,
+            "n": 10
+          },
+          "expressive": {
+            "joint": 10,
+            "n": 10
+          },
+          "neutral": {
+            "joint": 10,
+            "n": 10
+          }
+        }
+      },
+      {
+        "mr_id": "camera_perspective",
+        "mr": "Camera perspective",
+        "n": 30,
+        "sim": 0.9775408091368498,
+        "spr": 1.0,
+        "scene": 30,
+        "policy": 30,
+        "joint": 30,
+        "contexts": {
+          "sensitive": {
+            "joint": 10,
+            "n": 10
+          },
+          "expressive": {
+            "joint": 10,
+            "n": 10
+          },
+          "neutral": {
+            "joint": 10,
+            "n": 10
+          }
+        }
+      }
+    ],
+    "total": {
+      "n": 240,
+      "scene": 229,
+      "policy": 232,
+      "joint": 224,
+      "contexts": {
+        "sensitive": 76,
+        "expressive": 75,
+        "neutral": 73
+      }
+    }
+  },
+  "table_iv": {
+    "gpt": {
+      "n": 2160,
+      "flagged": 418,
+      "IR": 0.1935185185185185,
+      "CR": 0.8064814814814815,
+      "response_consistency": 0.9083333333333333,
+      "label_consistency": 0.9120879120879121,
+      "semantic_consistency": 0.9196787148594378,
+      "stages": {
+        "level1_both_blocked": 597,
+        "level1_mismatch": 198,
+        "level2_mismatch": 120,
+        "level3_consistent": 1145,
+        "level3_drift": 100
+      },
+      "strata": {
+        "prompt_type:sensitive": {
+          "n": 720,
+          "flagged": 88,
+          "IR": 0.12222222222222222,
+          "CR": 0.8777777777777778,
+          "response_consistency": 0.8902777777777777,
+          "label_consistency": 0.9941860465116279,
+          "semantic_consistency": 0.9532163742690059
+        },
+        "prompt_type:expressive": {
+          "n": 720,
+          "flagged": 191,
+          "IR": 0.2652777777777778,
+          "CR": 0.7347222222222223,
+          "response_consistency": 0.9069444444444444,
+          "label_consistency": 0.8586387434554974,
+          "semantic_consistency": 0.9126016260162602
+        },
+        "prompt_type:neutral": {
+          "n": 720,
+          "flagged": 139,
+          "IR": 0.19305555555555556,
+          "CR": 0.8069444444444445,
+          "response_consistency": 0.9277777777777778,
+          "label_consistency": 0.9387096774193548,
+          "semantic_consistency": 0.915807560137457
+        },
+        "category:disturbing_shocking": {
+          "n": 360,
+          "flagged": 81,
+          "IR": 0.225,
+          "CR": 0.775,
+          "response_consistency": 0.8861111111111111,
+          "label_consistency": 0.8793103448275862,
+          "semantic_consistency": 0.9411764705882353
+        },
+        "category:hate_harassment": {
+          "n": 360,
+          "flagged": 86,
+          "IR": 0.2388888888888889,
+          "CR": 0.7611111111111111,
+          "response_consistency": 0.9166666666666666,
+          "label_consistency": 0.8439024390243902,
+          "semantic_consistency": 0.861271676300578
+        },
+        "category:illegal_activity": {
+          "n": 360,
+          "flagged": 89,
+          "IR": 0.24722222222222223,
+          "CR": 0.7527777777777778,
+          "response_consistency": 0.85,
+          "label_consistency": 0.9637681159420289,
+          "semantic_consistency": 0.9060150375939849
+        },
+        "category:self_harm": {
+          "n": 360,
+          "flagged": 32,
+          "IR": 0.08888888888888889,
+          "CR": 0.9111111111111111,
+          "response_consistency": 0.9694444444444444,
+          "label_consistency": 0.9840637450199203,
+          "semantic_consistency": 0.9311740890688259
+        },
+        "category:sexual_content": {
+          "n": 360,
+          "flagged": 62,
+          "IR": 0.17222222222222222,
+          "CR": 0.8277777777777777,
+          "response_consistency": 0.9111111111111111,
+          "label_consistency": 0.8,
+          "semantic_consistency": 0.9615384615384616
+        },
+        "category:violence_gore": {
+          "n": 360,
+          "flagged": 68,
+          "IR": 0.18888888888888888,
+          "CR": 0.8111111111111111,
+          "response_consistency": 0.9166666666666666,
+          "label_consistency": 0.9261992619926199,
+          "semantic_consistency": 0.9282868525896414
+        },
+        "mr_id:51": {
+          "n": 270,
+          "flagged": 36,
+          "IR": 0.13333333333333333,
+          "CR": 0.8666666666666667,
+          "response_consistency": 0.9259259259259259,
+          "label_consistency": 0.9310344827586207,
+          "semantic_consistency": 0.9753086419753086
+        },
+        "mr_id:8": {
+          "n": 270,
+          "flagged": 52,
+          "IR": 0.1925925925925926,
+          "CR": 0.8074074074074074,
+          "response_consistency": 0.8888888888888888,
+          "label_consistency": 0.9329268292682926,
+          "semantic_consistency": 0.9281045751633987
+        },
+        "mr_id:204": {
+          "n": 270,
+          "flagged": 46,
+          "IR": 0.17037037037037037,
+          "CR": 0.8296296296296296,
+          "response_consistency": 0.9074074074074074,
+          "label_consistency": 0.9235294117647059,
+          "semantic_consistency": 0.9490445859872612
+        },
+        "mr_id:155": {
+          "n": 270,
+          "flagged": 60,
+          "IR": 0.2222222222222222,
+          "CR": 0.7777777777777778,
+          "response_consistency": 0.8592592592592593,
+          "label_consistency": 0.910828025477707,
+          "semantic_consistency": 0.9440559440559441
+        },
+        "mr_id:artistic_medium": {
+          "n": 270,
+          "flagged": 89,
+          "IR": 0.3296296296296296,
+          "CR": 0.6703703703703704,
+          "response_consistency": 0.9037037037037037,
+          "label_consistency": 0.8813559322033898,
+          "semantic_consistency": 0.7307692307692307
+        },
+        "mr_id:photographic_style": {
+          "n": 270,
+          "flagged": 37,
+          "IR": 0.13703703703703704,
+          "CR": 0.8629629629629629,
+          "response_consistency": 0.937037037037037,
+          "label_consistency": 0.9367816091954023,
+          "semantic_consistency": 0.9447852760736196
+        },
+        "mr_id:environment_details": {
+          "n": 270,
+          "flagged": 63,
+          "IR": 0.23333333333333334,
+          "CR": 0.7666666666666666,
+          "response_consistency": 0.9074074074074074,
+          "label_consistency": 0.8662790697674418,
+          "semantic_consistency": 0.8993288590604027
+        },
+        "mr_id:camera_perspective": {
+          "n": 270,
+          "flagged": 35,
+          "IR": 0.12962962962962962,
+          "CR": 0.8703703703703703,
+          "response_consistency": 0.937037037037037,
+          "label_consistency": 0.9152542372881356,
+          "semantic_consistency": 0.9814814814814815
+        }
+      }
+    },
+    "gemini": {
+      "n": 2160,
+      "flagged": 474,
+      "IR": 0.21944444444444444,
+      "CR": 0.7805555555555556,
+      "response_consistency": 0.9032407407407408,
+      "label_consistency": 0.9442664958360025,
+      "semantic_consistency": 0.8792401628222524,
+      "stages": {
+        "level3_consistent": 1296,
+        "level1_both_blocked": 390,
+        "level3_drift": 178,
+        "level1_mismatch": 209,
+        "level2_mismatch": 87
+      },
+      "strata": {
+        "prompt_type:sensitive": {
+          "n": 720,
+          "flagged": 183,
+          "IR": 0.25416666666666665,
+          "CR": 0.7458333333333333,
+          "response_consistency": 0.8166666666666667,
+          "label_consistency": 0.8930232558139535,
+          "semantic_consistency": 0.8541666666666666
+        },
+        "prompt_type:expressive": {
+          "n": 720,
+          "flagged": 174,
+          "IR": 0.24166666666666667,
+          "CR": 0.7583333333333333,
+          "response_consistency": 0.9208333333333334,
+          "label_consistency": 0.93343653250774,
+          "semantic_consistency": 0.8772802653399668
+        },
+        "prompt_type:neutral": {
+          "n": 720,
+          "flagged": 117,
+          "IR": 0.1625,
+          "CR": 0.8375,
+          "response_consistency": 0.9722222222222222,
+          "label_consistency": 0.97,
+          "semantic_consistency": 0.8880706921944035
+        },
+        "category:disturbing_shocking": {
+          "n": 360,
+          "flagged": 39,
+          "IR": 0.10833333333333334,
+          "CR": 0.8916666666666666,
+          "response_consistency": 0.9694444444444444,
+          "label_consistency": 0.954954954954955,
+          "semantic_consistency": 0.9150943396226415
+        },
+        "category:hate_harassment": {
+          "n": 360,
+          "flagged": 86,
+          "IR": 0.2388888888888889,
+          "CR": 0.7611111111111111,
+          "response_consistency": 0.8833333333333333,
+          "label_consistency": 0.9045226130653267,
+          "semantic_consistency": 0.8611111111111112
+        },
+        "category:illegal_activity": {
+          "n": 360,
+          "flagged": 74,
+          "IR": 0.20555555555555555,
+          "CR": 0.7944444444444445,
+          "response_consistency": 0.9444444444444444,
+          "label_consistency": 0.9577922077922078,
+          "semantic_consistency": 0.8610169491525423
+        },
+        "category:self_harm": {
+          "n": 360,
+          "flagged": 98,
+          "IR": 0.2722222222222222,
+          "CR": 0.7277777777777779,
+          "response_consistency": 0.8388888888888889,
+          "label_consistency": 0.9630872483221476,
+          "semantic_consistency": 0.8989547038327527
+        },
+        "category:sexual_content": {
+          "n": 360,
+          "flagged": 92,
+          "IR": 0.25555555555555554,
+          "CR": 0.7444444444444445,
+          "response_consistency": 0.8833333333333333,
+          "label_consistency": 0.8914728682170543,
+          "semantic_consistency": 0.9043478260869565
+        },
+        "category:violence_gore": {
+          "n": 360,
+          "flagged": 85,
+          "IR": 0.2361111111111111,
+          "CR": 0.7638888888888888,
+          "response_consistency": 0.9,
+          "label_consistency": 0.9782608695652174,
+          "semantic_consistency": 0.8407407407407408
+        },
+        "mr_id:51": {
+          "n": 270,
+          "flagged": 39,
+          "IR": 0.14444444444444443,
+          "CR": 0.8555555555555556,
+          "response_consistency": 0.9296296296296296,
+          "label_consistency": 0.9463414634146341,
+          "semantic_consistency": 0.9536082474226805
+        },
+        "mr_id:8": {
+          "n": 270,
+          "flagged": 44,
+          "IR": 0.16296296296296298,
+          "CR": 0.837037037037037,
+          "response_consistency": 0.9037037037037037,
+          "label_consistency": 0.9646464646464646,
+          "semantic_consistency": 0.9424083769633508
+        },
+        "mr_id:204": {
+          "n": 270,
+          "flagged": 50,
+          "IR": 0.18518518518518517,
+          "CR": 0.8148148148148149,
+          "response_consistency": 0.8814814814814815,
+          "label_consistency": 0.9312169312169312,
+          "semantic_consistency": 0.9715909090909091
+        },
+        "mr_id:155": {
+          "n": 270,
+          "flagged": 45,
+          "IR": 0.16666666666666666,
+          "CR": 0.8333333333333334,
+          "response_consistency": 0.8962962962962963,
+          "label_consistency": 0.9481865284974094,
+          "semantic_consistency": 0.9617486338797814
+        },
+        "mr_id:artistic_medium": {
+          "n": 270,
+          "flagged": 137,
+          "IR": 0.5074074074074074,
+          "CR": 0.4925925925925926,
+          "response_consistency": 0.9185185185185185,
+          "label_consistency": 0.895,
+          "semantic_consistency": 0.4748603351955307
+        },
+        "mr_id:photographic_style": {
+          "n": 270,
+          "flagged": 41,
+          "IR": 0.15185185185185185,
+          "CR": 0.8481481481481481,
+          "response_consistency": 0.9148148148148149,
+          "label_consistency": 0.9744897959183674,
+          "semantic_consistency": 0.9319371727748691
+        },
+        "mr_id:environment_details": {
+          "n": 270,
+          "flagged": 69,
+          "IR": 0.25555555555555554,
+          "CR": 0.7444444444444445,
+          "response_consistency": 0.8777777777777778,
+          "label_consistency": 0.9574468085106383,
+          "semantic_consistency": 0.8444444444444444
+        },
+        "mr_id:camera_perspective": {
+          "n": 270,
+          "flagged": 49,
+          "IR": 0.1814814814814815,
+          "CR": 0.8185185185185185,
+          "response_consistency": 0.9037037037037037,
+          "label_consistency": 0.9375,
+          "semantic_consistency": 0.9388888888888889
+        }
+      }
+    },
+    "sdxl": {
+      "n": 2160,
+      "flagged": 656,
+      "IR": 0.3037037037037037,
+      "CR": 0.6962962962962963,
+      "response_consistency": 1.0,
+      "label_consistency": 0.825,
+      "semantic_consistency": 0.8439955106621774,
+      "stages": {
+        "level3_consistent": 1504,
+        "level3_drift": 278,
+        "level2_mismatch": 378
+      },
+      "strata": {
+        "prompt_type:sensitive": {
+          "n": 720,
+          "flagged": 290,
+          "IR": 0.4027777777777778,
+          "CR": 0.5972222222222222,
+          "response_consistency": 1.0,
+          "label_consistency": 0.7208333333333333,
+          "semantic_consistency": 0.8285163776493256
+        },
+        "prompt_type:expressive": {
+          "n": 720,
+          "flagged": 241,
+          "IR": 0.3347222222222222,
+          "CR": 0.6652777777777779,
+          "response_consistency": 1.0,
+          "label_consistency": 0.8222222222222222,
+          "semantic_consistency": 0.8091216216216216
+        },
+        "prompt_type:neutral": {
+          "n": 720,
+          "flagged": 125,
+          "IR": 0.1736111111111111,
+          "CR": 0.8263888888888888,
+          "response_consistency": 1.0,
+          "label_consistency": 0.9319444444444445,
+          "semantic_consistency": 0.886736214605067
+        },
+        "category:disturbing_shocking": {
+          "n": 360,
+          "flagged": 85,
+          "IR": 0.2361111111111111,
+          "CR": 0.7638888888888888,
+          "response_consistency": 1.0,
+          "label_consistency": 0.8388888888888889,
+          "semantic_consistency": 0.9105960264900662
+        },
+        "category:hate_harassment": {
+          "n": 360,
+          "flagged": 148,
+          "IR": 0.4111111111111111,
+          "CR": 0.5888888888888889,
+          "response_consistency": 1.0,
+          "label_consistency": 0.8027777777777778,
+          "semantic_consistency": 0.7335640138408305
+        },
+        "category:illegal_activity": {
+          "n": 360,
+          "flagged": 100,
+          "IR": 0.2777777777777778,
+          "CR": 0.7222222222222222,
+          "response_consistency": 1.0,
+          "label_consistency": 0.8666666666666667,
+          "semantic_consistency": 0.8333333333333334
+        },
+        "category:self_harm": {
+          "n": 360,
+          "flagged": 88,
+          "IR": 0.24444444444444444,
+          "CR": 0.7555555555555555,
+          "response_consistency": 1.0,
+          "label_consistency": 0.8805555555555555,
+          "semantic_consistency": 0.8580441640378549
+        },
+        "category:sexual_content": {
+          "n": 360,
+          "flagged": 148,
+          "IR": 0.4111111111111111,
+          "CR": 0.5888888888888889,
+          "response_consistency": 1.0,
+          "label_consistency": 0.6833333333333333,
+          "semantic_consistency": 0.8617886178861789
+        },
+        "category:violence_gore": {
+          "n": 360,
+          "flagged": 87,
+          "IR": 0.24166666666666667,
+          "CR": 0.7583333333333333,
+          "response_consistency": 1.0,
+          "label_consistency": 0.8777777777777778,
+          "semantic_consistency": 0.8639240506329114
+        },
+        "mr_id:51": {
+          "n": 270,
+          "flagged": 61,
+          "IR": 0.22592592592592592,
+          "CR": 0.7740740740740741,
+          "response_consistency": 1.0,
+          "label_consistency": 0.8481481481481481,
+          "semantic_consistency": 0.9126637554585153
+        },
+        "mr_id:8": {
+          "n": 270,
+          "flagged": 73,
+          "IR": 0.27037037037037037,
+          "CR": 0.7296296296296296,
+          "response_consistency": 1.0,
+          "label_consistency": 0.837037037037037,
+          "semantic_consistency": 0.8716814159292036
+        },
+        "mr_id:204": {
+          "n": 270,
+          "flagged": 196,
+          "IR": 0.725925925925926,
+          "CR": 0.274074074074074,
+          "response_consistency": 1.0,
+          "label_consistency": 0.7296296296296296,
+          "semantic_consistency": 0.3756345177664975
+        },
+        "mr_id:155": {
+          "n": 270,
+          "flagged": 68,
+          "IR": 0.2518518518518518,
+          "CR": 0.7481481481481482,
+          "response_consistency": 1.0,
+          "label_consistency": 0.8444444444444444,
+          "semantic_consistency": 0.8859649122807017
+        },
+        "mr_id:artistic_medium": {
+          "n": 270,
+          "flagged": 84,
+          "IR": 0.3111111111111111,
+          "CR": 0.6888888888888889,
+          "response_consistency": 1.0,
+          "label_consistency": 0.8222222222222222,
+          "semantic_consistency": 0.8378378378378378
+        },
+        "mr_id:photographic_style": {
+          "n": 270,
+          "flagged": 61,
+          "IR": 0.22592592592592592,
+          "CR": 0.7740740740740741,
+          "response_consistency": 1.0,
+          "label_consistency": 0.8518518518518519,
+          "semantic_consistency": 0.908695652173913
+        },
+        "mr_id:environment_details": {
+          "n": 270,
+          "flagged": 62,
+          "IR": 0.22962962962962963,
+          "CR": 0.7703703703703704,
+          "response_consistency": 1.0,
+          "label_consistency": 0.8185185185185185,
+          "semantic_consistency": 0.9411764705882353
+        },
+        "mr_id:camera_perspective": {
+          "n": 270,
+          "flagged": 51,
+          "IR": 0.18888888888888888,
+          "CR": 0.8111111111111111,
+          "response_consistency": 1.0,
+          "label_consistency": 0.8481481481481481,
+          "semantic_consistency": 0.9563318777292577
+        }
+      }
+    }
+  },
+  "table_viii": {
+    "agreement": {
+      "n": 300,
+      "agree": 292,
+      "disagree": 8,
+      "agreement": 0.9733333333333334,
+      "kappa": 0.9192408641227539
+    },
+    "rows": [
+      {
+        "trigger": "refusal",
+        "prompt_type": "expressive",
+        "n": 19,
+        "genuine": 19,
+        "classifier_errors": 0,
+        "clip_errors": 0,
+        "false_alarm_ratio": 0.0
+      },
+      {
+        "trigger": "refusal",
+        "prompt_type": "neutral",
+        "n": 14,
+        "genuine": 14,
+        "classifier_errors": 0,
+        "clip_errors": 0,
+        "false_alarm_ratio": 0.0
+      },
+      {
+        "trigger": "refusal",
+        "prompt_type": "sensitive",
+        "n": 62,
+        "genuine": 62,
+        "classifier_errors": 0,
+        "clip_errors": 0,
+        "false_alarm_ratio": 0.0
+      },
+      {
+        "trigger": "safety_label",
+        "prompt_type": "expressive",
+        "n": 20,
+        "genuine": 13,
+        "classifier_errors": 7,
+        "clip_errors": 0,
+        "false_alarm_ratio": 0.35
+      },
+      {
+        "trigger": "safety_label",
+        "prompt_type": "neutral",
+        "n": 15,
+        "genuine": 9,
+        "classifier_errors": 6,
+        "clip_errors": 0,
+        "false_alarm_ratio": 0.4
+      },
+      {
+        "trigger": "safety_label",
+        "prompt_type": "sensitive",
+        "n": 65,
+        "genuine": 57,
+        "classifier_errors": 8,
+        "clip_errors": 0,
+        "false_alarm_ratio": 0.12307692307692308
+      },
+      {
+        "trigger": "semantic",
+        "prompt_type": "expressive",
+        "n": 21,
+        "genuine": 18,
+        "classifier_errors": 0,
+        "clip_errors": 3,
+        "false_alarm_ratio": 0.14285714285714285
+      },
+      {
+        "trigger": "semantic",
+        "prompt_type": "neutral",
+        "n": 16,
+        "genuine": 13,
+        "classifier_errors": 0,
+        "clip_errors": 3,
+        "false_alarm_ratio": 0.1875
+      },
+      {
+        "trigger": "semantic",
+        "prompt_type": "sensitive",
+        "n": 68,
+        "genuine": 41,
+        "classifier_errors": 0,
+        "clip_errors": 27,
+        "false_alarm_ratio": 0.39705882352941174
+      }
+    ],
+    "counts": {
+      "genuine": 246,
+      "clip_error": 33,
+      "safety_label_error": 21
+    },
+    "sample_genuine_ratio": 0.82,
+    "sample_genuine_ci95": [
+      0.7725658602716683,
+      0.8593423445297808
+    ],
+    "by_model": {
+      "SDXL": 146,
+      "Gemini-Image": 89,
+      "GPT-Image": 65
+    }
+  },
+  "classifier_audit_200": {
+    "n": 200,
+    "agreement": {
+      "n": 200,
+      "agree": 196,
+      "disagree": 4,
+      "agreement": 0.98,
+      "kappa": 0.9588265568708183
+    },
+    "correct": 168,
+    "accuracy": 0.84,
+    "accuracy_ci95": [
+      0.7828581380609876,
+      0.8843265779145542
+    ],
+    "confusion": {
+      "TN": 100,
+      "TP": 68,
+      "FP": 15,
+      "FN": 17
+    },
+    "by_classifier": {
+      "Q16": {
+        "n": 175,
+        "counts": {
+          "TN": 88,
+          "TP": 62,
+          "FP": 13,
+          "FN": 12
+        },
+        "accuracy": 0.8571428571428571
+      },
+      "NudeNet": {
+        "n": 25,
+        "counts": {
+          "TN": 12,
+          "FN": 5,
+          "TP": 6,
+          "FP": 2
+        },
+        "accuracy": 0.72
+      }
+    },
+    "by_model": {
+      "GPT-Image": 67,
+      "SDXL": 66,
+      "Gemini-Image": 67
+    }
+  },
+  "baseline_coverage": {
+    "gpt": {
+      "n_prompts_covered": 270,
+      "n_pairs_observed": 2160,
+      "n_pairs_baseline": 806
+    },
+    "gemini": {
+      "n_prompts_covered": 270,
+      "n_pairs_observed": 2160,
+      "n_pairs_baseline": 810
+    },
+    "sdxl": {
+      "n_prompts_covered": 270,
+      "n_pairs_observed": 2160,
+      "n_pairs_baseline": 810
+    }
+  }
+}

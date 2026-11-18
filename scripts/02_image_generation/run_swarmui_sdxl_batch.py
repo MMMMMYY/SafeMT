@@ -10,7 +10,7 @@ from urllib.request import Request, urlopen
 
 DEFAULT_SWARM_URL = "http://127.0.0.1:7801"
 DEFAULT_MODEL = "OfficialStableDiffusion/sd_xl_base_1.0.safetensors"
-ROOT = Path("/Users/mamengyao/Documents/UNSW/T2I")
+ROOT = Path(__file__).resolve().parents[2]
 SOURCE_JSON = ROOT / "llmorph/data/prompt-mutation/source_inputs/source_inputs.json"
 T4_JSON = ROOT / "llmorph/data/pilot-study/followup_inputs/followup_inputs__prompt_mutation__203.json"
 OUTPUT_ROOT = ROOT / "pilot study/generated_images/sdxl_local"

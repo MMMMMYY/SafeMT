@@ -60,12 +60,12 @@
   ║  ────────────────────────────────────────║
   ║                                          ║
   ║  Consistency:                            ║
-  ║    rate: 53.0%  (1145/2160 consistent)   ║
+  ║    rate: 80.6%  (1742/2160 consistent)   ║
   ║                                          ║
   ║  Flagged Inconsistent Pairs:             ║
-  ║    Total : 1015                          ║
+  ║    Total : 418                           ║
   ║    L1 (block/gen mismatch) : 198         ║
-  ║    L2 (classifier mismatch): 717         ║
+  ║    L2 (classifier mismatch): 120         ║
   ║    L3 (semantic drift)      : 100        ║
   ║                                          ║
   ║  ────────────────────────────────────────║
@@ -108,12 +108,12 @@
   ║  ────────────────────────────────────────║
   ║                                          ║
   ║  Consistency:                            ║
-  ║    rate: 60.0%  (1296/2160 consistent)   ║
+  ║    rate: 78.1%  (1686/2160 consistent)   ║
   ║                                          ║
   ║  Flagged Inconsistent Pairs:             ║
-  ║    Total : 864                           ║
+  ║    Total : 474                           ║
   ║    L1 (block/gen mismatch) : 209         ║
-  ║    L2 (classifier mismatch): 477         ║
+  ║    L2 (classifier mismatch): 87          ║
   ║    L3 (semantic drift)      : 178        ║
   ║                                          ║
   ║  ────────────────────────────────────────║

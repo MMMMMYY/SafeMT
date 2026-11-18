@@ -1,4 +1,32 @@
-# SafeMT
+# SafeMT replication package
+
+Materials for *Detecting Safety Behavior Inconsistencies in Text-to-Image Generation via Metamorphic Testing*.
+
+- [Experiment settings, model identifiers, query dates and evidence timing](revision/EXPERIMENTS.md)
+- [Prompts, audit samples and labels](revision/README.md)
+- [Reproduction commands](revision/RUNME.md)
+- [Paper table and figure mapping](revision/PAPER_MAP.md)
+- [Audit and figure viewer](revision/index.html)
+- [Invalid, borderline and false-alarm examples](examples/index.html)
+
+`revision/inputs/` contains the 270 source prompts and eight follow-ups per source.
+`dataset/manifests/` and `dataset/consistency_results/` contain original Stage-1 records.
+`revision/01_repeated_generation_baseline/` through `05_stage2_all_pairs_control/`
+contain the added experiments and analyses. `revision/scripts/` contains collection,
+scoring, aggregation and plotting code. `prompts/` and the modifier pool
+retain construction materials; these are not additional experimental samples.
+
+```bash
+python3 -m pip install -r revision/requirements-analysis.txt
+python3 revision/scripts/revision_analysis.py
+python3 revision/scripts/build_review_pages.py
+python3 revision/scripts/build_saliency_figures.py
+python3 revision/scripts/verify_package.py
+```
+
+Packaged audit previews support inspection. Model inference requires original
+images, credentials and dependencies as described in the reproduction commands.
+
 ---
 
 ## Repository Structure

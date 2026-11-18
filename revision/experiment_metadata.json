@@ -1,0 +1,145 @@
+{
+  "date_basis": "UTC calendar-date bounds of the collection attempt logs, including retries and skipped attempts. Per-attempt timestamps are omitted.",
+  "generation_runs": [
+    {
+      "experiment": "original_stage1",
+      "model": "GPT-Image",
+      "model_id": "gpt-image-1",
+      "manifest": "dataset/manifests/gpt/manifest.jsonl",
+      "attempts": 4151,
+      "query_date_start_utc": "2026-06-22",
+      "query_date_end_utc": "2026-06-23"
+    },
+    {
+      "experiment": "original_stage1",
+      "model": "Gemini-Image",
+      "model_id": "gemini-2.5-flash-image",
+      "manifest": "dataset/manifests/gemini/manifest.jsonl",
+      "attempts": 7591,
+      "query_date_start_utc": "2026-06-22",
+      "query_date_end_utc": "2026-06-26"
+    },
+    {
+      "experiment": "original_stage1",
+      "model": "SDXL",
+      "model_id": "stabilityai/stable-diffusion-xl-base-1.0",
+      "manifest": "dataset/manifests/sdxl/manifest_source_0_1350.jsonl",
+      "attempts": 1350,
+      "query_date_start_utc": "2026-06-22",
+      "query_date_end_utc": "2026-06-23"
+    },
+    {
+      "experiment": "original_stage1",
+      "model": "SDXL",
+      "model_id": "stabilityai/stable-diffusion-xl-base-1.0",
+      "manifest": "dataset/manifests/sdxl/manifest_modifier_0_1080.jsonl",
+      "attempts": 1080,
+      "query_date_start_utc": "2026-06-22",
+      "query_date_end_utc": "2026-06-23"
+    },
+    {
+      "experiment": "repeated_generation",
+      "model": "GPT-Image",
+      "model_id": "gpt-image-1",
+      "manifest": "revision/01_repeated_generation_baseline/manifests/gpt_image_1_manifest_reps.jsonl",
+      "attempts": 894,
+      "query_date_start_utc": "2026-10-23",
+      "query_date_end_utc": "2026-11-05"
+    },
+    {
+      "experiment": "repeated_generation",
+      "model": "Gemini-Image",
+      "model_id": "gemini-2.5-flash-image",
+      "manifest": "revision/01_repeated_generation_baseline/manifests/gemini_2_5_flash_image_manifest_reps.jsonl",
+      "attempts": 835,
+      "query_date_start_utc": "2026-10-23",
+      "query_date_end_utc": "2026-10-25"
+    },
+    {
+      "experiment": "repeated_generation",
+      "model": "SDXL",
+      "model_id": "stabilityai/stable-diffusion-xl-base-1.0",
+      "manifest": "revision/01_repeated_generation_baseline/manifests/sdxl_manifest_reps.jsonl",
+      "attempts": 810,
+      "query_date_start_utc": "2026-10-23",
+      "query_date_end_utc": "2026-10-23"
+    }
+  ],
+  "generation_settings": {
+    "gpt": {
+      "model_id": "gpt-image-1",
+      "size": "1024x1024",
+      "quality": "medium",
+      "basis": "Collection arguments and provider client; repetition manifests record quality.",
+      "seed": "Not set or recorded by the collector."
+    },
+    "gemini": {
+      "model_id": "gemini-2.5-flash-image",
+      "provider": "Vertex AI",
+      "aspect_ratio": "1:1",
+      "response_modalities": [
+        "TEXT",
+        "IMAGE"
+      ],
+      "basis": "Collection arguments and provider client.",
+      "seed": "Not set or recorded by the collector."
+    },
+    "sdxl": {
+      "model_id": "stabilityai/stable-diffusion-xl-base-1.0",
+      "width": 1024,
+      "height": 1024,
+      "steps": 20,
+      "guidance_scale": 7.0,
+      "torch_dtype": "float16",
+      "seed_records": "01_repeated_generation_baseline/manifests/sdxl_rep_jobs_with_seeds.json",
+      "original_stage1_seeds": "Not recorded by the original collector."
+    }
+  },
+  "analysis_settings": {
+    "clip": "ViT-L/14",
+    "semantic_distance": 0.3,
+    "threshold_grid": [
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4
+    ],
+    "bootstrap_resamples": 2000,
+    "permutations": 10000,
+    "analysis_seed": 0,
+    "negative_control_seed": 0
+  },
+  "human_validation": {
+    "flagged_pairs": 300,
+    "classifier_images": 200,
+    "mr_pairs": 240,
+    "sampling": "See 03_manual_audit/sampling_design.json and exact sample ID files.",
+    "release_scope": "Only the final paper samples are included. Alternative sample exports and the successor-model probe are excluded.",
+    "mr_decisions": "04_mr_validation/mr_adjudication_decisions.csv"
+  },
+  "automated_mr_validation": {
+    "pairs": 2160,
+    "mrs": 8,
+    "english_bert": "roberta-large",
+    "english_nli": "roberta-large-mnli",
+    "translation_bert": "xlm-roberta-large",
+    "translation_nli": "joeddav/xlm-roberta-large-xnli"
+  },
+  "repetition_protocol": {
+    "source_prompts_per_model": 270,
+    "repetitions_per_prompt": 3,
+    "planned_calls_per_model": 810,
+    "models": [
+      "gpt-image-1",
+      "gemini-2.5-flash-image",
+      "stabilityai/stable-diffusion-xl-base-1.0"
+    ]
+  },
+  "evidence_timeline": {
+    "classifier_audit_200": "completed previously",
+    "semantic_similarity_validation_1200": "completed previously",
+    "flagged_pair_audit_300": "expanded from 100 during revision",
+    "MR_validation_240": "expanded during revision"
+  }
+}

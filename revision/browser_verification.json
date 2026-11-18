@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "file": "03_manual_audit/flagged_pairs_review.html",
+      "records": 300,
+      "image_references": 505
+    },
+    {
+      "file": "03_manual_audit/classifier_images_review.html",
+      "records": 200,
+      "image_references": 200
+    },
+    {
+      "file": "04_mr_validation/mr_review.html",
+      "records": 240,
+      "image_references": 0
+    },
+    {
+      "file": "figures/figure_03_examples.html",
+      "records": 4,
+      "image_references": 8
+    }
+  ],
+  "index_links": "all exist",
+  "errors": []
+}

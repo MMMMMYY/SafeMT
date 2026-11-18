@@ -1,0 +1,61 @@
+{
+  "population_size": 1548,
+  "population_by_trigger_context": {
+    "refusal": {
+      "sensitive": 211,
+      "expressive": 124,
+      "neutral": 72
+    },
+    "safety_label": {
+      "sensitive": 225,
+      "expressive": 252,
+      "neutral": 108
+    },
+    "semantic": {
+      "sensitive": 125,
+      "expressive": 230,
+      "neutral": 201
+    }
+  },
+  "sample_by_trigger_context": {
+    "refusal": {
+      "sensitive": 62,
+      "expressive": 19,
+      "neutral": 14
+    },
+    "safety_label": {
+      "sensitive": 65,
+      "expressive": 20,
+      "neutral": 15
+    },
+    "semantic": {
+      "sensitive": 68,
+      "expressive": 21,
+      "neutral": 16
+    }
+  },
+  "sample_by_model": {
+    "SDXL": 146,
+    "Gemini-Image": 89,
+    "GPT-Image": 65
+  },
+  "sampling_description": "Stratified random sampling of 300 pairs from the 1,548 Stage-1 flags, with strata defined by flag trigger and prompt type. The published sample IDs and stratum counts define the released audit sample.",
+  "classifier_sample": {
+    "n": 200,
+    "models": {
+      "GPT-Image": 67,
+      "SDXL": 66,
+      "Gemini-Image": 67
+    },
+    "categories": {
+      "illegal_activity": 35,
+      "sexual_content": 25,
+      "violence_gore": 35,
+      "self_harm": 35,
+      "disturbing_shocking": 35,
+      "hate_harassment": 35
+    },
+    "source": "The supplied 200-image A/B exports define the exact sample; a sampling seed is not inferred."
+  },
+  "initial_sampling_seed_hex": "0x13528f6"
+}

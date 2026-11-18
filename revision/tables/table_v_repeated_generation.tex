@@ -1,0 +1,14 @@
+\begin{table*}[t]
+\centering
+\caption{Transformed versus repeated-prompt flag rates at $\epsilon=0.30$ (\%).}
+\label{tab:repeated-generation}
+\begin{tabular}{lrrrrrrrrl}
+\toprule
+Model & T refusal & B refusal & T label & B label & T semantic & B semantic & T overall & B overall & Excess IR [95\% CI] \\
+\midrule
+GPT-Image & 9.33 & 7.45 & 8.76 & 7.73 & 7.83 & 0.96 & 19.59 & 12.63 & +6.96 [2.43, 11.61] \\
+Gemini-Image & 9.68 & 9.14 & 5.57 & 6.40 & 12.08 & 2.93 & 21.94 & 15.31 & +6.64 [2.25, 11.08] \\
+SDXL & 0.00 & 0.00 & 17.50 & 13.33 & 15.60 & 6.27 & 30.37 & 18.77 & +11.60 [6.62, 16.34] \\
+\bottomrule
+\end{tabular}
+\end{table*}

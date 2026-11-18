@@ -37,12 +37,12 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 LLMORPH_DIR = ROOT / "llmorph" / "data" / "prompt-mutation"
 SOURCE_JSON = LLMORPH_DIR / "source_inputs" / "source_inputs_safemt.json"
 FOLLOWUP_DIR = LLMORPH_DIR / "followup_inputs"
 METADATA_JSONL = ROOT / "data" / "interim" / "dataset_construction" / "full_dataset_metadata.jsonl"
-CHATGPT_PY = ROOT / "ChatGPT.py"
+PROVIDER_CLIENT = ROOT / "revision/scripts/provider_client.py"
 
 MR_IDS = ["51", "8", "204", "155", "artistic_medium", "photographic_style", "environment_details", "camera_perspective"]
 
@@ -108,11 +108,11 @@ def _throttle(min_interval: float) -> None:
     _last_call_time[0] = time.time()
 
 
-def call_chatgpt_py(provider: str, model: str, prompt: str,
+def call_provider_client(provider: str, model: str, prompt: str,
                     output_path: Path, args: argparse.Namespace) -> tuple[str, str]:
-    """Call ChatGPT.py wrapper. Returns (status, detail)."""
+    """Call provider_client.py wrapper. Returns (status, detail)."""
     cmd = [
-        args.python_exe, str(CHATGPT_PY),
+        args.python_exe, str(PROVIDER_CLIENT),
         "--provider", provider,
         "--model", model,
         "--prompt", prompt,
@@ -204,7 +204,7 @@ def generate_one(provider: str, model: str, prompt: str,
     if provider == "sdxl":
         return call_swarm(prompt, output_path, args)
     else:
-        return call_chatgpt_py(provider, model, prompt, output_path, args)
+        return call_provider_client(provider, model, prompt, output_path, args)
 
 
 # ── main ──────────────────────────────────────────────────────────────────────

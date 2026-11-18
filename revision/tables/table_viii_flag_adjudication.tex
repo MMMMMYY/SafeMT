@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{Final adjudication of 300 flags in Stage 1.}
+\label{tab:flag-adjudication}
+\begin{tabular}{llrrrrr}
+\toprule
+Trigger & Prompt type & $n$ & Genuine & Classifier errors & CLIP errors & False alarm rate (\%) \\
+\midrule
+Refusal & Expressive & 19 & 19 & 0 & 0 & 0.00 \\
+Refusal & Natural & 14 & 14 & 0 & 0 & 0.00 \\
+Refusal & Sensitive & 62 & 62 & 0 & 0 & 0.00 \\
+Safety label & Expressive & 20 & 13 & 7 & -- & 35.00 \\
+Safety label & Natural & 15 & 9 & 6 & -- & 40.00 \\
+Safety label & Sensitive & 65 & 57 & 8 & -- & 12.31 \\
+Semantics & Expressive & 21 & 18 & -- & 3 & 14.29 \\
+Semantics & Natural & 16 & 13 & -- & 3 & 18.75 \\
+Semantics & Sensitive & 68 & 41 & -- & 27 & 39.71 \\
+Total &  & 300 & 246 & 21 & 33 & 18.00 \\
+\bottomrule
+\end{tabular}
+\end{table*}

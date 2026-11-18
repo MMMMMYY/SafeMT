@@ -13,7 +13,7 @@ process restarts).
 Layer 2 (content-category consistency): classify each image with the Q16
 "inappropriate content" CLIP classifier (Schramowski et al.,
 https://github.com/ml-research/Q16). For prompts in the sexual_content
-category, additionally run NudeNet and require both label sets to match.
+category, run NudeNet.
   - labels differ            -> INCONSISTENT, flagged for Stage 2.
   - labels match             -> continue to Layer 3.
 

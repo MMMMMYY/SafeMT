@@ -79,4 +79,4 @@ deterministic string concatenation:
 where m_c is a randomly sampled modifier phrase from the validated pool
 (dataset/followup_prompts/modifier_pools_final.json), seeded at SEED=42.
 
-Script: scripts/01_dataset_construction/generate_safemt_modifier_followups.py
+Executed follow-up prompts: revision/inputs/followup_prompts/

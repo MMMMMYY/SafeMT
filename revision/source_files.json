@@ -1,0 +1,77 @@
+{
+  "files": [
+    {
+      "published_file": "03_manual_audit/flagged_pairs_A.csv",
+      "source_export_sha256": "cedc6691a640c8a0cbb399690e3119f3ae096a8c4359b617304b7eb05c52d044",
+      "published_sha256": "67621c49cc4f35fdaad3797a2717e7a25cb3fe7b2082adb57557f382903dede1"
+    },
+    {
+      "published_file": "03_manual_audit/flagged_pairs_B.csv",
+      "source_export_sha256": "0c91bd1a3edb4ef34b62ccc0ae10de94d7cafa7c062abfe6db3eb50fb3b96a23",
+      "published_sha256": "0d3ce647788696a7003b0b69b4748289bbeaf14a21e2b7f533011458415fb27f"
+    },
+    {
+      "published_file": "03_manual_audit/flagged_pairs_final.csv",
+      "source_export_sha256": "143888a18fe812f468eaa6d0eb3ec296a3ec0f8caa1371e4fe3056e24148cc41",
+      "published_sha256": "4e5d3ee655212041ed0de5263779a23c3d2684b8df6a5eda43938fded03fdb66"
+    },
+    {
+      "published_file": "03_manual_audit/classifier_images_A_200.csv",
+      "source_export_sha256": "8451152f9569967e68d1e5edb9f842fac3707255ce7bc91d398de6ac0f1579d9",
+      "published_sha256": "b65a4f5e5164c95aa0bccdca827a46ce94aec0400a44b5d23cb1e15504d86087"
+    },
+    {
+      "published_file": "03_manual_audit/classifier_images_B_200.csv",
+      "source_export_sha256": "51bc64697db59e6397e7ed1490506ac3089cfd3250db5d9d0d6f5063c293bf42",
+      "published_sha256": "d7afe6cc0d74c3887206d42647c5e84a4733f08b3a40336d7e26da286f314ef1"
+    },
+    {
+      "published_file": "03_manual_audit/classifier_images_adjudication_200.csv",
+      "source_export_sha256": "9a5f5af608cc58407d35b977fc8327c0488247631a89f3d0a01d8fba1d7171fe",
+      "published_sha256": "b438ed28d320caf1585b4c1f23c3b50d97dc29ce5aeff9a64eeb5aafb44f6772"
+    },
+    {
+      "published_file": "04_mr_validation/mr_annotations_A.csv",
+      "source_export_sha256": "261d18d14060f445bcffd49e5f1d38d4aa811f98d4ae6a74793fe743e075715e",
+      "published_sha256": "8deb63b3e886370ef9c922d835422e588944ea0686e8efbc4a705d764fe3ab0e"
+    },
+    {
+      "published_file": "04_mr_validation/mr_annotations_B.csv",
+      "source_export_sha256": "31c93b94a73e07b7618ccf0d51bc3168b0f5dee730e8a70949cb1fd54effc7db",
+      "published_sha256": "895a8d0c0da3a26ee6235b1f7ac8ee16d9c8f12212ac247d08016cd90f0888fc"
+    },
+    {
+      "published_file": "04_mr_validation/mr_adjudicated.csv",
+      "published_sha256": "3f592170e8ce3c9dd7ea6fc1d948e5ad49ac7a5fd4b74c0fa3684e515c6ddab2",
+      "derived_from": [
+        "04_mr_validation/mr_annotations_A.csv",
+        "04_mr_validation/mr_annotations_B.csv",
+        "04_mr_validation/mr_adjudication_decisions.csv"
+      ]
+    },
+    {
+      "published_file": "04_mr_validation/mr_adjudication_decisions.csv",
+      "published_sha256": "3f51f66c6c6c3edbf5ce66cc6ea01a3a32ac311832afb431885b5affa454b863"
+    }
+  ],
+  "normalization": {
+    "encoding": "UTF-8",
+    "labels_changed": 0,
+    "restored_followup_prompt_count": 48,
+    "restored_from": "flagged_pairs_A.csv and flagged_pairs_B.csv, joined by pair_id",
+    "omitted_metadata_fields": [
+      "reviewed_at",
+      "dataset_id",
+      "started_at",
+      "checked_date",
+      "timestamp"
+    ],
+    "traceback_client_filename": "provider_client.py",
+    "private_identifiers": "Local path prefixes, cloud-project IDs, provider request/response IDs and per-response timestamps are omitted or normalized."
+  },
+  "mr_adjudication": {
+    "lineage_file": "04_mr_validation/mr_adjudication.json",
+    "unanimous_field_changes": 0,
+    "disputed_fields_resolved": 3
+  }
+}

@@ -1,9 +1,9 @@
 ## Source Prompt Generation — Anchor-Locked Triple Design
 
-This prompt was used with Claude (claude-sonnet-4-6) to generate the 9-prompt
+This prompt was used with GPT-4o mini to generate, Claude (claude-sonnet-4-6) to validate the 9-prompt
 anchor-locked triples that form the SafeMT source prompt dataset.
 
-One API call per (category, anchor_cue) pair; 30 pairs total → 270 source prompts.
+Each of the 30 safety-category–anchor pairs was initially submitted in one generation call, requesting nine prompts per pair and yielding 270 source prompts after validation and any necessary regeneration.
 
 ---
 
@@ -54,10 +54,3 @@ Constraints for ALL 9 prompts:
 - Do not add commentary, warnings, or meta-text — output only the 9 prompts.
 
 ---
-
-USAGE NOTES
-===========
-
-- {category} and {anchor_cue} are filled in per pair from configs/category_config.json
-- Script: scripts/01_dataset_construction/load_sensitive_sources.py
-- Output: dataset/source_prompts/anchored_prompt_groups_v2.jsonl

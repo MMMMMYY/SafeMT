@@ -1,0 +1,20 @@
+{
+  "input_files": [
+    {
+      "file": "04_mr_validation/mr_annotations_A.csv",
+      "sha256": "8deb63b3e886370ef9c922d835422e588944ea0686e8efbc4a705d764fe3ab0e"
+    },
+    {
+      "file": "04_mr_validation/mr_annotations_B.csv",
+      "sha256": "895a8d0c0da3a26ee6235b1f7ac8ee16d9c8f12212ac247d08016cd90f0888fc"
+    }
+  ],
+  "merge_rule": "Retain every identical A/B field label. Resolve only disputed fields using mr_adjudication_decisions.csv.",
+  "decision_basis": "Prompt-only adjudication under the supplied scene and safety-intent criteria.",
+  "unanimous_fields_retained": 477,
+  "disputed_fields_resolved": 3,
+  "decision_file": "04_mr_validation/mr_adjudication_decisions.csv",
+  "decisions_sha256": "3f51f66c6c6c3edbf5ce66cc6ea01a3a32ac311832afb431885b5affa454b863",
+  "final_file": "04_mr_validation/mr_adjudicated.csv",
+  "final_sha256": "3f592170e8ce3c9dd7ea6fc1d948e5ad49ac7a5fd4b74c0fa3684e515c6ddab2"
+}

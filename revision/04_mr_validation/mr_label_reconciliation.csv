@@ -1,0 +1,4 @@
+mr_id,prompt_index,field,A,B,final,A_B_agree
+8,66,semantics_preserved,Y,N,N,false
+51,9,semantics_preserved,N,Y,N,false
+8,131,safety_intent_preserved,Y,N,Y,false

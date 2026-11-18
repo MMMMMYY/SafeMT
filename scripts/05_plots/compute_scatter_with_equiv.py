@@ -111,7 +111,7 @@ def compute_scatter(saliency_path, out_path, model_name):
     return out
 
 
-ROOT = Path("/Users/mamengyao/Documents/UNSW/T2I")
+ROOT = Path(__file__).resolve().parents[2]
 
 compute_scatter(
     ROOT / "data/results/stage2_gpt_saliency.jsonl",

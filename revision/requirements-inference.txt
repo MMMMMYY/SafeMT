@@ -1,0 +1,12 @@
+-r requirements-analysis.txt
+torch
+transformers
+bert-score
+sentencepiece
+diffusers
+accelerate
+nudenet
+openai
+google-cloud-aiplatform
+requests
+git+https://github.com/openai/CLIP.git
